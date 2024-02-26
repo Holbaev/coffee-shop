@@ -1,0 +1,70 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  .form_title {
+    font-weight: 600;
+    font-size: 38px;
+    color: #141005;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+  }
+  .form_inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .form_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #d9d9d9;
+  }
+  
+  .form_input {
+      font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  background: transparent;
+  outline: none;
+  }
+  .form_btn {
+      font-weight: 600;
+      font-size: 24px;
+      color: #fff;
+      width: fit-content;
+      cursor: pointer;
+      box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25),
+        0 4px 4px 0 rgba(0, 0, 0, 0.25);
+      background: #816a4f;
+      border-radius: 20px;
+      padding: 5px 30px;
+      transition: ease-in-out 0.3s;
+  }
+  .form_btn:hover {
+      border-color: #69b4ff;
+      color: #69b4ff;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* изменена тень при наведении */
+      transform: translateY(-2px); /* кнопка немного поднимется при наведении */
+    }
+  
+    @media screen and (max-width: 800px) {
+      .form_title{
+          font-size: 26px;
+          text-align: center;
+      }
+      .form_inputs{
+          width: 100%;
+      }
+     }

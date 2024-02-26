@@ -1,0 +1,97 @@
+.products_card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 7px 10px 3px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  width: fit-content;
+  max-width: 260px;
+}
+
+.card_img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.card_content {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card_title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 4px;
+}
+.card_text {
+  font-weight: 400;
+  font-size: 9px;
+  color: #000;
+}
+.quantity_text{
+  font-size: 14px;
+  font-weight: 400px;
+}
+.card_flex {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+  align-self: flex-end;
+  height: 100%;
+}
+.card_price {
+font-weight: 700;
+font-size: 24px;
+color: #000;
+}
+
+.quantity_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.successed_text{
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.quantity_input {
+    width: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    outline: none;
+}
+.card_btn {
+font-weight: 500;
+font-size: 10px;
+color: #fff;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: #000;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+.card_btn:hover {
+  border-color: #69b4ff;
+  color: #69b4ff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* изменена тень при наведении */
+  transform: translateY(-2px); /* кнопка немного поднимется при наведении */
+}
+
+@media screen and (max-width: 800px) {
+  
+}

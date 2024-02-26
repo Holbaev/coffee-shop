@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2? Family= Андика & семья= Ла+Бель+Аврора & семья= Монтсеррат & display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&display=swap");
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  width: 100%;
+  background: #351c0f;
+}
+.header_title {
+  font-family: "La Belle Aurore", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+}
+.menu_list{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+.menu_item {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu_item.router-link-exact-active {
+  color: #69b4ff;
+  text-decoration: underline;
+
+}
+#hamburger {
+  display: none;
+}
+.register_links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.register_link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.link_text{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.logout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px ;
+}
+.logout_btn,
+.logout_btn_cart {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.cart_sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  width: 30%;
+  height: 100%;
+  z-index: 9;
+  opacity: 0;
+  transition: transform .5s ease, opacity ease .2s;
+  transform: translateX(+100%);
+}
+.mobile_register{
+  display: none;
+}
+.cart_sidebar.show {
+  transform: translateX(0%);
+  opacity: 1;
+}
+.cart_sidebar.show.logout_btn_cart{
+background: #69b4ff;
+padding: 10px;
+}
+@media screen and (max-width: 800px) {
+  .register_links{
+    display: none;
+  }
+  .logout{
+    display: none;
+  }
+  .mobile_register{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .mobile_btn{
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    list-style-type: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+
+    border-bottom: 1px solid #fff;
+    width: 100%;
+  }
+  .menu_list {
+    display: none;
+  }
+  .box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  #hamburger {
+    display: block;
+    margin: auto 0;
+    height: 100%;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    z-index: 11;
+  }
+
+  #hamburger samp {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: white;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+  }
+  #hamburger samp:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+  }
+
+  #hamburger samp:nth-child(2) {
+    top: 12px;
+    transform-origin: left center;
+  }
+
+  #hamburger samp:nth-child(3) {
+    top: 24px;
+    transform-origin: left center;
+  }
+
+  #hamburger.close samp:nth-child(1) {
+    transform: rotate(40deg);
+  }
+
+  #hamburger.close samp:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+    transition: .1s;
+  }
+
+  #hamburger.close samp:nth-child(3) {
+    transform: rotate(-40deg);
+  }
+
+  .menu_list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100vh);
+    opacity: 0;
+    z-index: 10;
+    transition: transform .5s ease, opacity ease .2s;
+  }
+  .menu_list.now-active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    height: fit-content;
+    z-index: 10;
+    transition: transform .5s ease, opacity ease .2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 10px;
+    transform: translateY(0);
+    background:  #351c0f;
+  }
+  .menu_item {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  .menu_item.router-link-exact-active {
+    color: #69b4ff;
+    text-decoration: none;
+    border-bottom: 1px solid #69b4ff;
+  
+  }
+  .header_title {
+    font-size: 34px;
+  }
+  .menu_item {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+}

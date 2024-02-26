@@ -1,0 +1,19 @@
+.products {
+  padding: 60px 120px 160px;
+  background: #ffedae;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .products {
+        padding: 50px 40px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .products {
+        padding: 20px 10px;
+    }
+   
+}
